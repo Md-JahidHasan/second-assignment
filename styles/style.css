@@ -1,0 +1,266 @@
+/* ----------------
+   - google-font -
+------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+.top-section{
+    display: flex;
+    background-color:black;
+    color: beige;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+
+}
+.left-section h1{
+    font-family: 'Poppins', sans-serif;
+}
+.section-banner{
+    width: 40%;
+    margin: auto;
+}
+.right-section{
+    padding-bottom: 0;
+}
+.right-section img{
+    width: 90%;
+    
+
+}
+/* Second Section 
+------------------- */
+.second-section{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 100px;
+}
+.left-bar-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.left-bar-button{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 44px;
+    border-radius: 8px;
+    margin: auto;
+    text-align: center;
+
+    text-decoration: none;
+    color: black;
+}
+.right-section-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+.card{
+    width: 100%;
+    height:285px ;
+    box-shadow: 4px 6px 15px;
+    border-radius: 8px;
+}
+.card-image img{
+    width:100%
+}
+.card-info{
+    padding: 10px;
+    
+}
+.card-info button{
+    padding: 5px 8px;
+}
+.card-icon p span{
+    margin-right: 10px;
+
+    
+}
+
+.button-section button{
+    visibility: hidden;
+    background-color: red;
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+}
+
+/* ------------
+    footer
+------------ */
+footer{
+    margin-top: 100px;
+    background-color: black;
+}
+.goal{
+    padding-top: 80px;
+    color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+hr{
+    background-color:grays;
+    border-color: gray;
+    /* height: 1px; */
+    width: 80%;
+    margin: auto;
+}
+.footer-info{
+    color: white;
+    font-size: 10px;
+    display: flex;
+    justify-content:center;
+    padding-bottom: 60px;
+    
+}
+.footer-info p{
+    padding: 20px;
+}
+
+/*------------------------------------------
+             Responsive Styles
+------------------------------------------- */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .second-section{
+        width: 90%;
+        display: block;
+        margin: auto;
+        margin-top: 80px;
+    }
+    .left-bar-buttons{
+        display: flex;
+
+        flex-direction: row;
+        justify-content: space-around;
+        background-color:white;
+        width: 90%;
+        
+        border-radius: 10px;
+        
+    
+    }
+    .right-section-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap:20px;
+        grid-row-gap: 20px;
+        justify-content:center;
+    }
+    .card{
+        width: 100%;
+        height:362px ;
+        box-shadow: 4px 6px 15px;
+        border-radius: 8px;
+    }
+    .left-bar{
+        height: 150px;
+    }
+    .left-bar-buttons p{
+        height: 50px;
+    }
+    .button-section button{
+        visibility: visible;
+        background-color: red;
+        color: white;
+        border: 0;
+        padding: 10px 20px;
+        display: flex;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+    .footer-info{
+        color: white;
+        font-size: 10px;
+        display: flex;
+        justify-content:center;
+        padding-bottom: 60px;
+        
+    }
+    .footer-info p{
+        padding: 20px;
+    }
+
+}
+@media only screen and (max-width:687px) {
+    .top-section{
+        display: block;
+        background-color:black;
+        color: beige;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 10px;
+    
+    }
+    .section-banner{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding-top: 40px;
+    }
+    
+    .second-section{
+        width: 90%;
+        display:block;
+        margin: auto;
+        margin-top: 100px;
+    }
+    .left-bar-buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(217, 207, 207);
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        margin:auto;
+        margin-bottom: 40px;
+        margin-top: 0px;
+    }
+    .right-section-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+    }
+    .card{
+        width: 100%;
+        height:362px ;
+        box-shadow: 4px 6px 15px;
+        border-radius: 8px;
+    }
+    .footer-info{
+        color: white;
+        font-size: 10px;
+        display:block;
+        text-align: center;
+        padding-bottom: 60px;
+        
+    }
+    .card-image img{
+        width:100%;
+        height: 200px;
+    }
+}
