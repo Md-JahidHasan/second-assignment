@@ -8,6 +8,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    background-color: rgba(222, 224, 225, 0.399);
 }
 .top-section{
     display: flex;
@@ -17,22 +18,48 @@ body{
     margin: auto;
     margin-top: 50px;
     border-radius: 10px;
+    padding-bottom: 0;
 
 }
+
 .left-section h1{
     font-family: 'Poppins', sans-serif;
+    font-size: 2em;
 }
 .section-banner{
     width: 40%;
     margin: auto;
+    padding-bottom: 0;
 }
 .right-section{
     padding-bottom: 0;
+    margin-bottom: 0;
+}
+.banner-btn{
+    color: white;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+    background-image: linear-gradient(tomato, red);
+    position:relative ;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+.top-section:hover .banner-btn{
+    color:#255784 ;
+    background-color:#2196f3;
+    box-shadow: 0 0 10px #505152, 0 0 20px #6d6d6e, 0 0 30px #777879;
 }
 .right-section img{
     width: 90%;
-    
-
+    padding-bottom: 0;
+    margin-bottom: 0;
+    transition: width 1s, height 2s;
+    position: relative;
+    bottom: -4px;
+}
+.right-section:hover img{
+    width: 100%;
 }
 /* Second Section 
 ------------------- */
@@ -54,7 +81,7 @@ body{
     margin-right: 20px;
 }
 .left-bar-button{
-    background-color: white;
+    background-color: rgb(243, 243, 243);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,7 +104,7 @@ body{
     width: 100%;
     height:285px ;
     box-shadow: 4px 6px 15px;
-    border-radius: 8px;
+    border-radius: 15px;
 }
 .card-image img{
     width:100%
@@ -88,6 +115,8 @@ body{
 }
 .card-info button{
     padding: 5px 8px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
 }
 .card-icon p span{
     margin-right: 10px;
@@ -112,7 +141,8 @@ footer{
 }
 .goal{
     padding-top: 80px;
-    color: crimson;
+    color: rgb(250, 248, 249);
+    font-size: 1.5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,17 +160,69 @@ hr{
     font-size: 10px;
     display: flex;
     justify-content:center;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
     
 }
 .footer-info p{
-    padding: 20px;
+    padding: 10px;
 }
-
+.another-site{
+    display: flex;
+    justify-content:center;
+}
+.another-site p{
+    padding: 20px;
+    margin-bottom: 60px;
+}
+.another-site p a{
+    font-size: 2em;
+   
+}
+#fb{
+    color: blue;
+}
+#insta{
+    color:rgb(240, 9, 9);
+}
+#twitter{
+    color: skyblue;
+}
+/* ------------------UP coming Match --------------------- */
+.card-upcoming{
+    background-color: rgba(246, 246, 246, 0.628);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgb(228, 228, 228);
+}
+.card-image-upcoming{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding-top: 0px;
+    text-align: center;
+    align-items: center;
+    
+}
+.card-image-upcoming-flex{
+    margin: auto;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.card-title{
+    display:flex;
+    justify-content: center;
+}
 /*------------------------------------------
              Responsive Styles
 ------------------------------------------- */
 @media only screen and (min-width:688px) and (max-width:992px) {
+    .left-section{
+        padding: 10px;
+    }
     .second-section{
         width: 90%;
         display: block;
@@ -154,7 +236,8 @@ hr{
         justify-content: space-around;
         background-color:white;
         width: 90%;
-        
+        margin: auto;
+        height: 80px;
         border-radius: 10px;
         
     
@@ -168,7 +251,7 @@ hr{
     }
     .card{
         width: 100%;
-        height:362px ;
+        height:370px ;
         box-shadow: 4px 6px 15px;
         border-radius: 8px;
     }
@@ -195,7 +278,7 @@ hr{
         font-size: 10px;
         display: flex;
         justify-content:center;
-        padding-bottom: 60px;
+        padding-bottom: 0px;
         
     }
     .footer-info p{
@@ -210,7 +293,7 @@ hr{
         color: beige;
         width: 90%;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 20px;
         border-radius: 10px;
     
     }
@@ -219,6 +302,9 @@ hr{
         margin: auto;
         text-align: center;
         padding-top: 40px;
+    }
+    .banner-btn{
+        margin-top: 20px;
     }
     
     .second-section{
@@ -263,4 +349,5 @@ hr{
         width:100%;
         height: 200px;
     }
+    
 }
