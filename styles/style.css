@@ -40,15 +40,15 @@ body{
     padding: 10px 15px;
     border: 0;
     border-radius: 5px;
-    background-image: linear-gradient(tomato, red);
+    background-color: red;
     position:relative ;
     text-transform: uppercase;
     transition: 0.2s;
 }
 .top-section:hover .banner-btn{
-    color:#255784 ;
-    background-color:#2196f3;
-    box-shadow: 0 0 10px #505152, 0 0 20px #6d6d6e, 0 0 30px #777879;
+    color:hwb(131 43% 2%) ;
+    background-color:#012a4b;
+    box-shadow: 0 0 5px hwb(131 43% 2%), 0 0 15px hwb(131 43% 2%), 0 0 25px hwb(131 43% 2%);
 }
 .right-section img{
     width: 90%;
